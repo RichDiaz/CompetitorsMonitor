@@ -6,7 +6,7 @@ import datetime
 
 # Blank Python
 useragent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36"
-ASINS = ["B0018AA9CU","B0018A7F8Q","B000KNFR2S","B00112VEA6","B000CO89T8"]
+ASINS = ["B01M1BIV1Q","B01MQOC40C"]
 summary = ""
 
 for asin in ASINS:

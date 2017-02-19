@@ -5,7 +5,7 @@ import uuid
 import datetime
 
 # Blank Python
-useragent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36"
+useragent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36"
 ASINS = ["B01M1BIV1Q","B01MQOC40C"]
 summary = ""
 

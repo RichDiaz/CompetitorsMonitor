@@ -10,8 +10,7 @@ ASINS = ["B01M1BIV1Q","B01MQOC40C"]
 summary = ""
 
 for asin in ASINS:
-    #url = "http://www.amazon.com/dp/"+asin
-    url = "https://www.amazon.com/Klipsch-ProMedia-Certified-Computer-Speaker/dp/B000062VUO/ref=sr_1_1?ie=UTF8&qid=1487473639&sr=8-1&keywords=klipsch+2.1"
+    url = "http://www.amazon.com/dp/"+asin
     html = scraperwiki.scrape(url,user_agent=useragent)
     root = lxml.html.fromstring(html)
     for title in root.cssselect("span[id='btAsinTitle']"):  

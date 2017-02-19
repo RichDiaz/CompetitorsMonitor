@@ -5,13 +5,13 @@ import uuid
 import datetime
 
 # Blank Python
-
+useragent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.75 Safari/537.36"
 ASINS = ["B0018AA9CU","B0018A7F8Q","B000KNFR2S","B00112VEA6","B000CO89T8"]
 summary = ""
 
 for asin in ASINS:
     url = "http://www.amazon.com/dp/"+asin
-    html = scraperwiki.scrape(url)
+    html = scraperwiki.scrape(url,useragent)
     root = lxml.html.fromstring(html)
     for title in root.cssselect("span[id='btAsinTitle']"):  
         summary += title.text +":  "

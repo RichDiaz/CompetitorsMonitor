@@ -11,7 +11,7 @@ summary = ""
 
 for asin in ASINS:
     url = "http://www.amazon.com/dp/"+asin
-    html = scraperwiki.scrape(url,useragent)
+    html = scraperwiki.scrape(url,user_agent=useragent)
     root = lxml.html.fromstring(html)
     for title in root.cssselect("span[id='btAsinTitle']"):  
         summary += title.text +":  "
